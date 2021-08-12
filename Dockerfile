@@ -187,4 +187,4 @@ STOPSIGNAL SIGINT
 # that even 90 seconds may not be long enough in many instances.
 
 EXPOSE 5432
-CMD ["postgres", "-c 'max_connections=500'", "-c "shared_buffer=256MB"]
+CMD ["postgres", "-c", "max_connections=500", "-c", "shared_buffers=256MB"]
